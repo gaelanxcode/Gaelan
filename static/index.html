@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ckb" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KurdCine AI</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="login" class="center">
+        <h2>چوونەژوورەوە</h2>
+        <input id="email" type="email" placeholder="پۆستی ئەلیکترۆنی" />
+        <input id="password" type="password" placeholder="وشەی نهێنی" />
+        <button id="loginBtn">چوونەژوور</button>
+        <p id="loginError" class="error"></p>
+    </div>
+
+    <div id="app" class="hidden">
+        <header>
+            <button id="menuToggle">☰</button>
+            <h1>KurdCine AI</h1>
+        </header>
+        <nav id="sideMenu" class="hidden">
+            <button id="closeMenu">✖</button>
+            <h3>مێنوو</h3>
+            <div class="theme">
+                <label>ڕووکار:</label>
+                <button id="lightTheme">ڕووناک</button>
+                <button id="darkTheme">تاریک</button>
+            </div>
+            <div class="powered">بە پشتگیریی <a href="https://t.me/gae1an" target="_blank">GaelanKRD</a></div>
+        </nav>
+        <main>
+            <div id="landing" class="center">
+                <input id="startInput" placeholder="پەیام بنووسە..." />
+                <button id="startBtn">ناردن</button>
+            </div>
+            <div id="chat" class="hidden">
+                <ul id="messages"></ul>
+            </div>
+        </main>
+        <footer id="chatBar" class="hidden">
+            <select id="modelSelect">
+                <option value="basic">KurdCine Basic</option>
+                <option value="pro">KurdCine Pro</option>
+            </select>
+            <input id="msgInput" placeholder="پەیام بنووسە..." />
+            <button id="sendBtn">ناردن</button>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
